@@ -1,0 +1,32 @@
+[
+  {
+    "id":"1",
+    "name":"简阅小说-男生女生海量小说",
+    "pkg":"com.nick.novel.bookreader",
+    "desc":"海量书籍让妳畅读到嗨，热门榜单供您阅读选择，万部原创小说应有尽有！"
+  },
+  {
+    "id":"2",
+    "name":"超级小说-海量熱門暢銷小說庫-历史武侠/玄幻修真熱門小說免費看",
+    "pkg":"com.nick.novel.superreader",
+    "desc":"永久免费！拥有海量小说库！万本精品热门小说免费阅读，您值得拥有的追书神器！"
+  },
+  {
+    "id":"3",
+    "name":"SimplePDF Reader - PDF Viewer",
+    "pkg":"com.viewer.simple.sample",
+    "desc":"SimplePDF 阅读器应用程序是一款多合一的 PDF 阅读器，它是市场上世界领先的PDF编辑器。"
+  },
+  {
+    "id":"4",
+    "name":"GpsTest-GpsTestTool-GnssStatus:卫星信号查看工具",
+    "pkg":"com.nick.location666",
+    "desc":"非常有趣的GPS测试工具，它能够查看手机接收到的卫星信号、太空中的卫星分布等其他卫星数据。"
+  },
+  {
+    "id":"5",
+    "name":"中华经典历史小说合集: 阅读国学古文典籍的电子书",
+    "pkg":"com.nick.novel.wuxia01",
+    "desc":"中国经典历史小说合集，内置多本中国经典历史小说，让你畅读到嗨。"
+  }
+]
