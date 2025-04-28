@@ -1,1 +1,130 @@
-welcome
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Innovation | Byx Studio</title>
+    <style>
+        :root {
+            --primary: #2196f3;
+            --dark: #1a1a1a;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(45deg, var(--dark), #2d2d2d);
+            color: white;
+            line-height: 1.6;
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 0 10%;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                        url(https://source.unsplash.com/random/1920x1080/?tech,innovation) center/cover;
+        }
+
+        .hero-content {
+            max-width: 600px;
+            animation: slideIn 1s ease;
+        }
+
+        .features {
+            padding: 80px 10%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.05);
+            padding: 30px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .glow-text {
+            text-shadow: 0 0 10px var(--primary);
+        }
+
+        nav {
+            position: fixed;
+            width: 100%;
+            padding: 20px 10%;
+            background: rgba(0,0,0,0.8);
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h2 class="glow-text">BYX Studio</h2>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="glow-text" style="font-size: 3em; margin-bottom: 20px;">Explore the Digital Future</h1>
+            <p style="font-size: 1.2em;">Building intelligent worlds with code</p>
+            <button style="margin-top: 30px; padding: 15px 40px; 
+                        background: var(--primary); border: none;
+                        border-radius: 25px; cursor: pointer;">
+                Get Started
+            </button>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="card">
+            <h3>Tech Innovation</h3>
+            <p>Cutting-edge solutions</p>
+            <p style="margin-top: 15px;">AI Algorithms × Big Data × IoT</p>
+        </div>
+        <div class="card">
+            <h3>Success Stories</h3>
+            <p>50+ completed projects</p>
+            <p style="margin-top: 15px;">Smart Campus × Industrial IoT × Security</p>
+        </div>
+        <div class="card">
+            <h3>Our Advantage</h3>
+            <p>Fast response × High efficiency</p>
+            <p style="margin-top: 15px;">24/7 Support | 99.9% Code Standard</p>
+        </div>
+    </section>
+
+    <footer style="padding: 20px; text-align: center; background: rgba(0,0,0,0.5);">
+        <script>
+            document.write(`&copy; 2018-${new Date().getFullYear()} BYX Studio. All rights reserved`);
+        </script>
+    </footer>
+
+    <script>
+        // Scroll animation trigger
+        window.addEventListener('scroll', () => {
+            document.querySelectorAll('.card').forEach(card => {
+                const cardTop = card.getBoundingClientRect().top;
+                if(cardTop < window.innerHeight - 100) {
+                    card.style.opacity = 1;
+                }
+            })
+        });
+    </script>
+</body>
+</html>
