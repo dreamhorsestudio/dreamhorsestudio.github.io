@@ -250,6 +250,7 @@ const apps = [
     shortName: "SimplePDF 阅读器",
     category: "tool",
     categoryLabel: "工具",
+    detailUrl: "tools.html",
     rating: 0,
     downloads: "500+",
     contentRating: "3+",
@@ -270,6 +271,7 @@ const apps = [
     shortName: "GPS测试工具",
     category: "tool",
     categoryLabel: "工具",
+    detailUrl: "tools.html",
     rating: 0,
     downloads: "1,000+",
     contentRating: "3+",
@@ -413,6 +415,7 @@ appGrid.addEventListener("click", (e) => {
   const card = e.target.closest(".app-card");
   if (!card) return;
   const app = apps.find((a) => a.id === card.dataset.id);
+  if (app && app.detailUrl) { window.location.href = app.detailUrl; return; }
   if (app) openModal(app);
 });
 
@@ -422,6 +425,7 @@ appGrid.addEventListener("keydown", (e) => {
   if (!card) return;
   e.preventDefault();
   const app = apps.find((a) => a.id === card.dataset.id);
+  if (app && app.detailUrl) { window.location.href = app.detailUrl; return; }
   if (app) openModal(app);
 });
 

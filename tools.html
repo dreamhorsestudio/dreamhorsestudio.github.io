@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GPS Test Tool & PDF Reader - Free Android Utilities | DreamHorseStudio</title>
+  <meta name="description" content="Free Android utility apps by DreamHorseStudio. GPS Test Tool - check GNSS, BeiDou, GPS satellite signals. SimplePDF - fast PDF reader & viewer. Download free on Google Play.">
+  <meta name="keywords" content="GPS test tool, GPS signal checker, GNSS satellite viewer, BeiDou signal, GPS test Android, satellite signal strength, NMEA data, compass app, speed meter, PDF reader Android, free PDF viewer, SimplePDF, PDF file reader, GPS Prüfen, Satellit Signal, PDF Reader kostenlos, herramienta GPS, lector PDF gratis, GPS тест, просмотр PDF, alat GPS Android, pembaca PDF gratis">
+  <meta name="author" content="DreamHorseStudio">
+  <link rel="canonical" href="https://dreamhorsestudio.github.io/tools.html">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dreamhorsestudio.github.io/tools.html">
+  <meta property="og:title" content="GPS Test Tool & PDF Reader - Free Android Utilities | DreamHorseStudio">
+  <meta property="og:description" content="Free Android utility apps. GPS Test Tool - check GNSS, BeiDou, GPS satellite signals with real-time strength. SimplePDF - fast & lightweight PDF reader. Download free on Google Play.">
+  <meta property="og:image" content="https://dreamhorsestudio.github.io/icons/applogo4.png">
+  <meta property="og:site_name" content="DreamHorseStudio">
+  <meta property="og:locale" content="en_US">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="GPS Test Tool & PDF Reader - Free Android Utilities">
+  <meta name="twitter:description" content="GPS Test Tool - check GNSS, GPS, BeiDou satellite signals. SimplePDF - fast PDF reader. Free on Google Play.">
+  <meta name="twitter:image" content="https://dreamhorsestudio.github.io/icons/applogo4.png">
+  <!-- hreflang -->
+  <link rel="alternate" hreflang="en" href="https://dreamhorsestudio.github.io/tools.html">
+  <link rel="alternate" hreflang="x-default" href="https://dreamhorsestudio.github.io/tools.html">
+  <link rel="preload" href="css/style.css?v=6" as="style">
+  <link rel="stylesheet" href="css/style.css?v=6">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🐎%3C/text%3E%3C/svg%3E">
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "DreamHorseStudio Tools",
+    "url": "https://dreamhorsestudio.github.io/tools.html",
+    "description": "Free Android utility apps - GPS satellite test tool and PDF reader by DreamHorseStudio",
+    "inLanguage": "en",
+    "publisher": {
+      "@type": "Organization",
+      "name": "DreamHorseStudio",
+      "url": "https://play.google.com/store/apps/developer?id=DreamHorseStudio"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "DreamHorseStudio Free Android Utilities",
+    "description": "Free Android utility apps - GPS satellite test tool and PDF reader",
+    "numberOfItems": 2,
+    "itemListElement": [
+      {
+        "@type": "SoftwareApplication",
+        "position": 1,
+        "name": "GPS Test Tool",
+        "alternateName": "GPS Test Tool - GNSS & BeiDou Satellite Signal Checker",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Android",
+        "url": "https://play.google.com/store/apps/details?id=com.nick.location666",
+        "description": "Test GPS, BDS signals. View GNSS satellite count & signal strength, compass, speed, altitude, coordinates, NMEA data. Supports GPS, GLONASS, GALILEO, SBAS, BeiDou, QZSS.",
+        "contentRating": "3+",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "featureList": "Supports GPS / GLONASS / GALILEO / SBAS / BeiDou / QZSS six satellite systems, Real-time satellite count & signal strength view, Current speed, heading, altitude & coordinates display, Built-in compass, local/UTC time, NMEA data view & save"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "position": 2,
+        "name": "SimplePDF Reader",
+        "alternateName": "SimplePDF - PDF Reader & Viewer",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Android",
+        "url": "https://play.google.com/store/apps/details?id=com.viewer.simple.sample",
+        "description": "Fast and free PDF reader. Open, zoom, search and manage all your PDF files. Lightweight, ad-free, works offline.",
+        "contentRating": "3+",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "featureList": "Instantly open PDF files from local storage, email or cloud, Smooth zoom, scroll & full-text search, Lightweight app with minimal storage footprint, Offline use, clean ad-free interface, safe & private"
+      }
+    ]
+  }
+  </script>
+  <style>
+    /* Tools page specific styles */
+    .tools-hero {
+      position: relative;
+      overflow: hidden;
+      padding: 56px 0 40px;
+      text-align: center;
+    }
+    .tools-hero .hero-bg {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(600px 300px at 30% 20%, rgba(0, 212, 255, 0.22), transparent 70%),
+        radial-gradient(500px 250px at 70% 80%, rgba(52, 211, 155, 0.12), transparent 70%);
+      pointer-events: none;
+    }
+    .tools-hero-inner { position: relative; }
+    .tools-hero .hero-tag {
+      display: inline-block;
+      padding: 6px 16px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      color: var(--green);
+      background: rgba(52, 211, 155, 0.1);
+      border: 1px solid rgba(52, 211, 155, 0.3);
+      border-radius: 999px;
+      margin-bottom: 14px;
+    }
+    .tools-hero h1 {
+      font-size: clamp(28px, 4.5vw, 46px);
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      background: linear-gradient(120deg, #fff 30%, var(--green) 70%, var(--accent-2));
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 12px;
+    }
+    .tools-hero-sub {
+      color: var(--text-dim);
+      font-size: 16px;
+      max-width: 680px;
+      margin: 0 auto 10px;
+      line-height: 1.7;
+    }
+    .tools-hero-sub-en {
+      color: var(--text-dim);
+      font-size: 14px;
+      max-width: 680px;
+      margin: 0 auto 24px;
+      opacity: 0.7;
+    }
+
+    /* Featured app (GPS) */
+    .featured-app {
+      padding: 0 24px 60px;
+    }
+    .featured-card {
+      max-width: 1000px;
+      margin: 0 auto;
+      border-radius: 24px;
+      border: 1px solid rgba(52, 211, 155, 0.3);
+      background: linear-gradient(135deg, rgba(52, 211, 155, 0.08), rgba(0, 212, 255, 0.04) 50%, rgba(17, 21, 39, 0.6));
+      padding: 48px;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 40px;
+      align-items: start;
+    }
+    .featured-icon-wrap {
+      text-align: center;
+    }
+    .featured-icon {
+      width: 140px;
+      height: 140px;
+      border-radius: 32px;
+      object-fit: cover;
+      box-shadow: 0 16px 48px rgba(0, 0, 0, 0.5);
+      margin-bottom: 16px;
+    }
+    .featured-badge {
+      display: inline-block;
+      padding: 5px 16px;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--green);
+      background: rgba(52, 211, 155, 0.1);
+      border: 1px solid rgba(52, 211, 155, 0.35);
+      border-radius: 999px;
+    }
+    .featured-body h2 {
+      font-size: 30px;
+      font-weight: 800;
+      margin-bottom: 6px;
+      line-height: 1.3;
+    }
+    .featured-tagline {
+      font-size: 16px;
+      color: var(--accent-2);
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+    .featured-desc {
+      font-size: 15px;
+      color: var(--text);
+      line-height: 1.8;
+      margin-bottom: 24px;
+    }
+
+    /* Feature grid */
+    .feature-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-bottom: 28px;
+    }
+    .feature-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 14px 16px;
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border);
+    }
+    .feature-item .fi-icon {
+      font-size: 20px;
+      flex-shrink: 0;
+      width: 28px;
+      text-align: center;
+    }
+    .feature-item .fi-text {
+      font-size: 13.5px;
+      color: var(--text-dim);
+      line-height: 1.6;
+    }
+    .feature-item .fi-text strong {
+      color: var(--text);
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    /* Satellite systems */
+    .sat-systems {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 28px;
+    }
+    .sat-chip {
+      padding: 8px 18px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text);
+      background: rgba(0, 212, 255, 0.08);
+      border: 1px solid rgba(0, 212, 255, 0.2);
+      border-radius: 999px;
+    }
+
+    /* Download button */
+    .btn-download {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 32px;
+      font-size: 16px;
+      font-weight: 700;
+      color: #fff;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      border-radius: 999px;
+      border: none;
+      box-shadow: 0 8px 30px rgba(124, 92, 255, 0.4);
+      transition: transform 0.2s, box-shadow 0.2s;
+      text-decoration: none;
+    }
+    .btn-download:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 40px rgba(124, 92, 255, 0.5);
+    }
+    .meta-row {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      font-size: 13px;
+      color: var(--text-dim);
+      margin-bottom: 24px;
+    }
+    .meta-row span { display: flex; align-items: center; gap: 4px; }
+
+    /* Secondary app (SimplePDF) */
+    .secondary-apps {
+      padding: 0 24px 80px;
+    }
+    .secondary-apps h2 {
+      text-align: center;
+      font-size: 26px;
+      font-weight: 800;
+      margin-bottom: 32px;
+    }
+    .secondary-card {
+      max-width: 800px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      padding: 32px;
+      border-radius: 20px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      transition: border-color 0.25s, box-shadow 0.25s;
+    }
+    .secondary-card:hover {
+      border-color: rgba(124, 92, 255, 0.4);
+      box-shadow: var(--shadow);
+    }
+    .secondary-icon {
+      width: 96px;
+      height: 96px;
+      border-radius: 24px;
+      object-fit: cover;
+      flex-shrink: 0;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    }
+    .secondary-body { flex: 1; min-width: 0; }
+    .secondary-body h3 {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .secondary-body .sec-desc {
+      font-size: 14px;
+      color: var(--text-dim);
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+    .sec-features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+    .sec-feat-chip {
+      padding: 5px 14px;
+      font-size: 12px;
+      color: var(--text-dim);
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+    }
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 24px;
+      font-size: 14px;
+      font-weight: 600;
+      color: #fff;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      border-radius: 999px;
+      text-decoration: none;
+      transition: transform 0.2s;
+    }
+    .btn-secondary:hover { transform: translateY(-2px); }
+
+    /* Also check section */
+    .also-check {
+      text-align: center;
+      padding: 40px 24px 60px;
+      border-top: 1px solid var(--border);
+    }
+    .also-check p {
+      color: var(--text-dim);
+      font-size: 15px;
+      margin-bottom: 16px;
+    }
+    .also-check .btn-download {
+      font-size: 14px;
+      padding: 12px 28px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .featured-card {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 32px 22px;
+        gap: 24px;
+      }
+      .feature-grid { grid-template-columns: 1fr; }
+      .sat-systems { justify-content: center; }
+      .meta-row { justify-content: center; }
+      .secondary-card { flex-direction: column; text-align: center; }
+      .sec-features { justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-logo">🐎</span>
+        <span class="brand-name">DreamHorse<em>Studio</em></span>
+      </a>
+      <div class="header-actions">
+        <a class="btn btn-play-header" href="https://play.google.com/store/apps/developer?id=DreamHorseStudio" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+            <path d="M3.6 1.8 13.7 12 3.6 22.2c-.4-.2-.6-.6-.6-1.1V2.9c0-.5.2-.9.6-1.1zm11.5 8.8L5.9 1.4l10.9 6.3-1.7 2.9zm0 2.8 1.7 2.9-10.9 6.3 9.2-9.2zm2.4-1.4 2.9 1.7c.9.5.9 1.7 0 2.2l-2.9 1.7-1.9-2.8 1.9-2.8z"/>
+          </svg>
+          Google Play
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="tools-hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="container tools-hero-inner">
+      <span class="hero-tag">🛠️ Free Android Utilities</span>
+      <h1>Smart Tools for Everyday Use</h1>
+      <p class="tools-hero-sub">Lightweight, privacy-first Android utilities — no ads, no registration, no data collection. Just download and use.</p>
+      <p class="tools-hero-sub-en">Kostenlose Android-Tools · Herramientas gratuitas · Бесплатные утилиты · Aplikasi Android gratis</p>
+    </div>
+  </section>
+
+  <!-- Featured: GPS Test Tool -->
+  <section class="featured-app" id="gps-test">
+    <div class="featured-card">
+      <div class="featured-icon-wrap">
+        <img class="featured-icon" src="icons/applogo4.png" alt="GPS Test Tool - GNSS & Satellite Signal Checker" width="140" height="140">
+        <span class="featured-badge">⭐ Featured App</span>
+      </div>
+      <div class="featured-body">
+        <h2>GPS Test Tool</h2>
+        <p class="featured-tagline">GNSS & BeiDou Satellite Signal Checker</p>
+        <p class="featured-desc">
+          Test and monitor GPS, GLONASS, GALILEO, SBAS, BeiDou and QZSS satellite signals in real time.
+          View satellite count, signal strength, current speed, heading, altitude, and precise coordinates.
+          Includes a built-in compass, NMEA data logging, and local/UTC time display.
+          Perfect for outdoor enthusiasts, surveyors, engineers, and anyone who needs reliable GPS diagnostics.
+        </p>
+
+        <div class="feature-grid">
+          <div class="feature-item">
+            <span class="fi-icon">🛰️</span>
+            <div class="fi-text">
+              <strong>6 Satellite Systems</strong>
+              GPS · GLONASS · GALILEO · SBAS · BeiDou · QZSS
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="fi-icon">📊</span>
+            <div class="fi-text">
+              <strong>Real-Time Signal Strength</strong>
+              Live satellite count and signal bar visualization
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="fi-icon">🧭</span>
+            <div class="fi-text">
+              <strong>Built-in Compass</strong>
+              Heading direction with speed, altitude & coordinates
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="fi-icon">💾</span>
+            <div class="fi-text">
+              <strong>NMEA Data Save</strong>
+              View and save raw NMEA sentences for analysis
+            </div>
+          </div>
+        </div>
+
+        <div class="sat-systems">
+          <span class="sat-chip">🇺🇸 GPS</span>
+          <span class="sat-chip">🇷🇺 GLONASS</span>
+          <span class="sat-chip">🇪🇺 GALILEO</span>
+          <span class="sat-chip">SBAS</span>
+          <span class="sat-chip">🇨🇳 BeiDou / 北斗</span>
+          <span class="sat-chip">🇯🇵 QZSS</span>
+        </div>
+
+        <div class="meta-row">
+          <span>⬇ 10,000+ downloads</span>
+          <span>👤 Everyone</span>
+          <span>📱 Android</span>
+          <span>💰 Free</span>
+        </div>
+
+        <a class="btn-download" href="https://play.google.com/store/apps/details?id=com.nick.location666" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+            <path d="M3.6 1.8 13.7 12 3.6 22.2c-.4-.2-.6-.6-.6-1.1V2.9c0-.5.2-.9.6-1.1zm11.5 8.8L5.9 1.4l10.9 6.3-1.7 2.9zm0 2.8 1.7 2.9-10.9 6.3 9.2-9.2zm2.4-1.4 2.9 1.7c.9.5.9 1.7 0 2.2l-2.9 1.7-1.9-2.8 1.9-2.8z"/>
+          </svg>
+          Download Free on Google Play
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Secondary: SimplePDF -->
+  <section class="secondary-apps" id="simplepdf">
+    <h2>📄 More Useful Tools</h2>
+    <div class="secondary-card">
+      <img class="secondary-icon" src="icons/applogo3.png" alt="SimplePDF Reader - Fast PDF Viewer for Android" width="96" height="96">
+      <div class="secondary-body">
+        <h3>SimplePDF Reader</h3>
+        <p class="sec-desc">
+          A fast, lightweight PDF reader for Android. Open PDF files from local storage, email attachments, or cloud services.
+          Smooth zoom, scroll, and full-text search. No ads, no registration — works completely offline.
+        </p>
+        <div class="sec-features">
+          <span class="sec-feat-chip">📂 Open from Anywhere</span>
+          <span class="sec-feat-chip">🔍 Full-Text Search</span>
+          <span class="sec-feat-chip">🪶 Lightweight</span>
+          <span class="sec-feat-chip">🔒 Private & Offline</span>
+        </div>
+        <div class="meta-row" style="margin-bottom:14px">
+          <span>⬇ 5,000+ downloads</span>
+          <span>👤 Everyone</span>
+          <span>💰 Free</span>
+        </div>
+        <a class="btn-secondary" href="https://play.google.com/store/apps/details?id=com.viewer.simple.sample" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+            <path d="M3.6 1.8 13.7 12 3.6 22.2c-.4-.2-.6-.6-.6-1.1V2.9c0-.5.2-.9.6-1.1zm11.5 8.8L5.9 1.4l10.9 6.3-1.7 2.9zm0 2.8 1.7 2.9-10.9 6.3 9.2-9.2zm2.4-1.4 2.9 1.7c.9.5.9 1.7 0 2.2l-2.9 1.7-1.9-2.8 1.9-2.8z"/>
+          </svg>
+          Download Free
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Multi-language SEO content -->
+  <section style="padding:0 24px 40px;max-width:1000px;margin:0 auto">
+    <h2 style="font-size:20px;font-weight:700;margin-bottom:20px;text-align:center;color:var(--text-dim)">Available Worldwide 🌍</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px">
+      <div style="padding:16px;border-radius:14px;background:var(--card);border:1px solid var(--border)">
+        <p style="font-size:13px;color:var(--text-dim);line-height:1.7"><strong style="color:var(--text)">🇩🇪 Deutsch</strong><br>
+        Kostenloses GPS-Test-Tool und PDF-Reader für Android. Überprüfen Sie GPS-, GLONASS-, GALILEO- und BeiDou-Satellitensignale in Echtzeit. Leichtgewichtiger PDF-Viewer ohne Werbung.</p>
+      </div>
+      <div style="padding:16px;border-radius:14px;background:var(--card);border:1px solid var(--border)">
+        <p style="font-size:13px;color:var(--text-dim);line-height:1.7"><strong style="color:var(--text)">🇪🇸 Español</strong><br>
+        Herramienta gratuita de prueba GPS y lector PDF para Android. Verifica señales de satélites GPS, GLONASS, GALILEO y BeiDou en tiempo real. Lector PDF ligero y sin anuncios.</p>
+      </div>
+      <div style="padding:16px;border-radius:14px;background:var(--card);border:1px solid var(--border)">
+        <p style="font-size:13px;color:var(--text-dim);line-height:1.7"><strong style="color:var(--text)">🇷🇺 Русский</strong><br>
+        Бесплатный инструмент для проверки GPS и PDF-ридер для Android. Проверяйте сигналы спутников GPS, ГЛОНАСС, GALILEO и BeiDou в реальном времени. Лёгкий PDF-просмотрщик без рекламы.</p>
+      </div>
+      <div style="padding:16px;border-radius:14px;background:var(--card);border:1px solid var(--border)">
+        <p style="font-size:13px;color:var(--text-dim);line-height:1.7"><strong style="color:var(--text)">🇮🇩 Bahasa Indonesia</strong><br>
+        Alat uji GPS gratis dan pembaca PDF untuk Android. Periksa sinyal satelit GPS, GLONASS, GALILEO, dan BeiDou secara real-time. Pembaca PDF ringan tanpa iklan.</p>
+      </div>
+      <div style="padding:16px;border-radius:14px;background:var(--card);border:1px solid var(--border)">
+        <p style="font-size:13px;color:var(--text-dim);line-height:1.7"><strong style="color:var(--text)">🇸🇦 العربية</strong><br>
+        أداة اختبار GPS مجانية وقارئ PDF لنظام Android. تحقق من إشارات الأقمار الصناعية GPS و GLONASS و GALILEO و BeiDou في الوقت الفعلي. قارئ PDF خفيف بدون إعلانات.</p>
+      </div>
+      <div style="padding:16px;border-radius:14px;background:var(--card);border:1px solid var(--border)">
+        <p style="font-size:13px;color:var(--text-dim);line-height:1.7"><strong style="color:var(--text)">🇯🇵 日本語</strong><br>
+        Android用無料GPSテストツールとPDFリーダー。GPS、GLONASS、GALILEO、北斗衛星の信号をリアルタイムで確認。広告なしの軽量PDFビューア。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Also check: Novel apps -->
+  <section class="also-check">
+    <p>📚 Looking for Chinese novel reading apps? We also have 14 free ebook readers featuring wuxia, romance, and classic literature.</p>
+    <a class="btn-download" href="index.html">
+      Explore All DreamHorseStudio Apps →
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> DreamHorseStudio · All apps free on Google Play</p>
+      <a href="https://play.google.com/store/apps/developer?id=DreamHorseStudio" target="_blank" rel="noopener">Google Play Developer Page</a>
+    </div>
+  </footer>
+</body>
+</html>
