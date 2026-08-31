@@ -11,3 +11,7 @@ desktop.ini
 
 # Test files
 test-*.js
+
+# Build scripts
+gen-seo.js
+inject-seo.js
