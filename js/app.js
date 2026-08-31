@@ -248,6 +248,8 @@ const apps = [
     id: "com.viewer.simple.sample",
     name: "SimplePDF - PDF Reader Viewer",
     shortName: "SimplePDF 阅读器",
+    enName: "SimplePDF Reader",
+    enDesc: "Fast and free PDF reader. Open, zoom, search and manage all your PDF files.",
     category: "tool",
     categoryLabel: "工具",
     detailUrl: "tools.html",
@@ -269,6 +271,8 @@ const apps = [
     id: "com.nick.location666",
     name: "GPS测试工具 - GNSS、北斗信号查看器",
     shortName: "GPS测试工具",
+    enName: "GPS Test Tool",
+    enDesc: "Test GPS, BDS signals. View GNSS satellite count & signal strength, compass, speed, NMEA data.",
     category: "tool",
     categoryLabel: "工具",
     detailUrl: "tools.html",
@@ -326,11 +330,19 @@ const playUrl = (app) => `https://play.google.com/store/apps/details?id=${app.id
 const iconUrl = (app) => app.localIcon ? `icons/${app.localIcon}` : app.icon + ICON_SUFFIX;
 const categoryLabelOf = (app) => t(app.category === "novel" ? "category.books" : "category.tools");
 
-/* 繁体模式下，应用名称/简介/功能/书目自动转繁体；英文等其他语言保持原样 */
+/* 繁体模式下，应用名称/简介/功能/书目自动转繁体；英文模式使用 enName/enDesc；其他语言保持原样 */
 const tr = (text) =>
   typeof getCurrentLang === "function" && getCurrentLang() === "zh-TW" && typeof toTraditional === "function"
     ? toTraditional(text)
     : text;
+
+/* 英文模式优先使用 enName/enDesc，繁体模式用 tr() 转换，其他语言保持原样 */
+const localize = (app, field) => {
+  if (typeof getCurrentLang === "function" && getCurrentLang() === "en" && app.enName) {
+    return field === "name" ? app.enName : app.enDesc;
+  }
+  return tr(app[field === "name" ? "shortName" : "shortDesc"]);
+};
 
 function ratingText(app) {
   return app.rating > 0 ? `<span class="rating-badge">★ ${app.rating.toFixed(1)}</span>` : "";
@@ -342,16 +354,16 @@ function renderApps(filter = "all") {
   appGrid.innerHTML = list
     .map(
       (app, i) => `
-    <article class="app-card" data-id="${app.id}" style="animation-delay:${i * 0.05}s" tabindex="0" role="button" aria-label="${t("common.viewDetails")} ${tr(app.shortName)}">
+    <article class="app-card" data-id="${app.id}" style="animation-delay:${i * 0.05}s" tabindex="0" role="button" aria-label="${t("common.viewDetails")} ${localize(app, "name")}">
       <div class="card-top">
-        <img class="app-icon" src="${iconUrl(app)}" alt="${tr(app.shortName)}" loading="lazy"
+        <img class="app-icon" src="${iconUrl(app)}" alt="${localize(app, "name")}" loading="lazy"
              onerror="this.onerror=null;this.src='${app.icon}'">
         <div class="card-title-wrap">
-          <h3 class="app-name">${tr(app.shortName)}</h3>
+          <h3 class="app-name">${localize(app, "name")}</h3>
           <p class="app-category">${categoryLabelOf(app)} ${ratingText(app)}</p>
         </div>
       </div>
-      <p class="app-desc">${tr(app.shortDesc)}</p>
+      <p class="app-desc">${localize(app, "desc")}</p>
       <div class="card-foot">
         <span class="app-downloads">⬇ ${displayDownloads(app)} ${t("common.downloads")}</span>
         <span class="card-cta">${t("common.details")}</span>
@@ -382,8 +394,8 @@ function openModal(app) {
   openApp = app;
   $("modalIcon").src = iconUrl(app);
   $("modalIcon").onerror = function () { this.onerror = null; this.src = app.icon; };
-  $("modalTitle").textContent = tr(app.name);
-  $("modalDesc").textContent = tr(app.shortDesc);
+  $("modalTitle").textContent = localize(app, "name");
+  $("modalDesc").textContent = localize(app, "desc");
   $("modalPlayBtn").href = playUrl(app);
 
   const chips = [
@@ -457,12 +469,12 @@ function renderCarousel() {
       (app) => `
     <div class="slide">
       <div class="slide-inner">
-        <img class="slide-icon" src="${iconUrl(app)}" alt="${tr(app.shortName)}" loading="lazy"
+        <img class="slide-icon" src="${iconUrl(app)}" alt="${localize(app, "name")}" loading="lazy"
              onerror="this.onerror=null;this.src='${app.icon}'">
         <div class="slide-body">
           <span class="slide-badge">${t("slide.badge")}</span>
-          <h3 class="slide-name">${tr(app.shortName)}</h3>
-          <p class="slide-desc">${tr(app.shortDesc)}</p>
+          <h3 class="slide-name">${localize(app, "name")}</h3>
+          <p class="slide-desc">${localize(app, "desc")}</p>
           <div class="slide-meta">
             <span>⬇ ${displayDownloads(app)} ${t("common.downloads")}</span>
             ${
